@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Calculate VAT easily. Use this simple app to calculate correct price. Add or subtract VAT.">
+    <meta name="keywords" content="VAT, calculator, Value Added Tax">
+    <meta name="author" content="Mike Teuten">
+    <title>VAT Calculator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>
+    <section class ="box">
+    <h1>Peter Baldwin <br/>VAT Calculator</h1>
+    <hr>
+    
+    <p>Use this calculator to add or subtract 20% Value Added Tax for a given price.</p>
+    <form name="vatCalc">
+        <label>Enter a price . . .</label>
+        <br /> 
+        <br />
+        <input type="text" name="price" size="30" placeholder="Please enter a price (example:  24.99)">
+        <br />
+        <br />
+        <button type="button" id="add-button" onClick="addVAT()">+ 20% VAT</button>
+        <button type="button" id="subtract-button" onClick="subtractVAT()">- 20% VAT</button>
+        <br />
+        <br />
+    <label>Result . . .</label>
+        <br />
+        <br />
+        <input type="text" name="vat" size="30" placeholder="Your updated price will appear here.">
+        <br />
+        <br />
+        <button type="reset" id="reset-button">RESET</button>
+        <br />
+        <br /> 
+        <p>You are welcome to use this calculator as often as you wish <br/> <b> Why not contact us and let us do all the hard work for you?</b></p>
+        
+    </form>
+    <nav>
+            <ul>
+              <a href="index.html">
+            <button class="button_1" style="margin: 15px 0px 0px 20px">Back to Web Site</button></a>
+            </ul>
+    </nav>
+    <hr>
+    
+    <br />
+    <br />
+    <script src="app.js"></script>
+</section>
+</body>
+</html>
